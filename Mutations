@@ -1,0 +1,21 @@
+function mutation(arr) {
+  var j=0, isThere=0;
+  var newArr=[];
+  newArr[0]=arr[0].toLowerCase();
+  newArr[1]=arr[1].toLowerCase();
+  /*var a=arr[0].indexOf(arr[1][2]);*/
+  for(j;j<arr[1].length;j++){
+    if(newArr[0].indexOf(newArr[1][j])!==-1){
+      isThere++;
+    }
+  }
+  
+  if(isThere==arr[1].length){
+    return true;
+  }else {
+    return false;
+  }
+      
+}
+
+mutation(["hello", "hey"]);
